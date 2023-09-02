@@ -1,0 +1,31 @@
+<h3>Demo for pipe</h3>
+
+<h2>Course Recdived is ---{{courseReceived}}</h2>
+
+<h3> {{bill}} -- {{bill | currency}} ---{{bill | currency:'INR'}}</h3>
+
+<input type="date" [(ngModel)]="estDate"/>
+
+<h3>{{ estDate }} -----{{ estDate | date }}</h3>
+
+<h3>{{ amount }}--- {{amount | number  }}</h3>
+
+<input type="number" min="0" max="0" [(ngModel)]="selectectedIndex"/>
+
+<select>
+    <option *ngFor="let c of courses | slice:selectectedIndex">{{ c }}</option>
+</select>
+
+
+<hr/>
+<input type="text"  [(ngModel)]="fname"/>
+
+<h3>{{ fname }} ---{{fname | lowercase}}  -- {{fname | uppercase }} ---{{fname | titlecase}}</h3>
+
+<hr/>
+
+<input  type="number" min="0" max="10000" [(ngModel)] ="enteredNumber" />
+
+    
+<h3>{{enteredNumber}} --- {{enteredNumber | ordinal}}</h3>
+

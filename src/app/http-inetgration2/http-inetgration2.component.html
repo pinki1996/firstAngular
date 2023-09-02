@@ -1,0 +1,16 @@
+
+<div>
+    <h2>Welcome to create a new emplyee data</h2>
+
+<input type="number" placeholder="Email-id" min="0" max="10" [(ngModel)]="newEmp.id"/><br/><br/>
+<input type="text" placeholder="Name" min="0" max="10"   [(ngModel)]="newEmp.name"/><br/><br/>
+<input type="number" placeholder="Salary" min="0" max="1000000"  [(ngModel)]="newEmp.salary"/><br/><br/>
+<input type="number" placeholder="Bonus" min="0" max="100000"   [(ngModel)]="newEmp.bonus"/><br/><br/>
+
+<button (click) = "PostnewEmp()">Submit</button>
+
+<hr/>
+<h3>{{resMsg}}</h3>
+</div>
+
+

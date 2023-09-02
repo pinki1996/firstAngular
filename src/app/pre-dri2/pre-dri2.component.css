@@ -1,0 +1,19 @@
+#parent{
+    border: 3px solid blue;
+    margin: 20px;
+}
+
+.cls1{
+    background-color: aquamarine;
+}
+.cls2{
+ background-color: blue;
+ color: white;
+}
+.cls3{
+ background-color: yellow;
+ color: blue;
+}
+.cls4{
+background-color: green;
+}

@@ -1,0 +1,56 @@
+
+<h3>Example of the Angular</h3>
+
+<ol>
+    <li>HTML</li>
+    <li>Css</li>
+    <li>Javascript</li>
+    <li>Angular</li>
+</ol>
+
+<hr/>
+
+<ol>
+    <li *ngFor = "let c of courses">{{ c }}</li>
+</ol>
+
+<hr/>
+
+<div *ngIf="isChecked">
+
+<select>
+    <option></option>
+    <option>HTML</option>
+    <option>Css</option>
+    <option>ts</option>
+    <option>js</option>
+</select>
+
+<hr/>
+
+<select [(ngModel)] = "selectedCourses">
+    <option *ngFor="let d of courses ">{{ d }}</option>
+</select>
+
+<h3>{{ selectedCourses }}</h3>
+
+<hr/>
+
+<select [(ngModel)]="selectedEMpname">
+    <option *ngFor="let em of employees">{{ em.name }}</option>
+</select>
+
+
+<h4>{{selectedEMpname}}</h4>
+
+<hr/>
+
+<select [(ngModel)]="selectedEmployee">
+    <option *ngFor="let em of employees" [ngValue]="em">{{ em.name }}</option>
+</select>
+
+<b>{{selectedEmployee | json}}</b>
+
+</div>
+
+<input type="checkbox" [(ngModel)] = "isChecked"/><b>{{isChecked}}</b>

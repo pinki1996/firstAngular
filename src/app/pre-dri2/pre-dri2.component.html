@@ -1,0 +1,39 @@
+
+
+<h3> Examples of *ngClass, *ngSwitch</h3>
+
+<select [(ngModel)] ="selectedPlayer" (change) = "applyCss()">
+    <option *ngFor="let p of players">{{ p }}</option>
+</select>
+
+<b>{{selectedPlayer}}</b>
+
+<div id="parent" [ngSwitch]="selectedPlayer" [ngClass] ="cssCarrier">
+    <div *ngSwitchCase="'sachin'" >
+        <h3>Sachin is played for India</h3>
+        <h3>Sachin is top over batsman</h3>
+        <h3>Sachin holds the record</h3>
+    </div>
+    
+    <div *ngSwitchCase="'kohli'" >
+        <h3>Kohli is played for India</h3>
+        <h3>Kohli is top over batsman</h3>
+        <h3>Kohli holds the record</h3>
+    </div>
+    
+    <div  *ngSwitchCase="'dhoni'" >
+        <h3>Dhoni is played for India</h3>
+        <h3>Dhoni is middle over batsman</h3>
+        <h3>Dhoni holds the record</h3>
+    </div>
+    
+    <div *ngSwitchCase="'yuvraj'">
+        <h3>Yuvraj is played for India</h3>
+        <h3>Yuvraj is middle over batsman</h3>
+        <h3>Yuvraj holds the record</h3>
+    </div>
+
+    <div *ngSwitchDefault="">
+        Please Choose right answer
+    </div>
+</div>

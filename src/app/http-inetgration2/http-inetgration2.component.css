@@ -1,0 +1,17 @@
+
+div{
+    text-align: center;
+}
+input, button{
+    padding: 6px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 20px;
+    width: 140px;
+
+}
+
+button{
+    width: 100px;
+    border-radius: 20px;
+}
