@@ -1,0 +1,31 @@
+
+
+#page{
+    height: 800px;
+    background-image: url('../assets/homeBackGround.jpg');
+    
+}
+
+header a{
+    margin-left: 12px;
+    font-size: 20px;
+    font-family: monospace;
+}
+header{
+    text-align: center;
+    border-bottom: 2px solid gray;
+    padding: 10px;
+}
+
+main{
+    padding-left: 20px;
+}
+main{
+    width: 80%;
+    margin: auto;
+}
+main{
+    margin-top: 5px;
+    border-radius: 10px;
+    
+}
