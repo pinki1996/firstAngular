@@ -1,0 +1,8 @@
+
+
+<h2>Demo on displaying information of testers</h2>
+
+
+<app-comp3 [employees] ="testers" (info)="receivedData($event)"></app-comp3>
+
+<h2>Selected Employee -- {{ selectedEmployee |json }}</h2>

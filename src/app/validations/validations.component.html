@@ -1,0 +1,12 @@
+
+
+<h2>Demo on angular Validation</h2>
+
+<input type="text"placeholder="Enter your name" required #fNameInfo="ngModel"
+minlength="5" [(ngModel)]="fName"/>
+
+<b *ngIf="fNameInfo.errors && fNameInfo.errors['required']">First name is mandatory</b>
+<b *ngIf="fNameInfo.errors && fNameInfo.errors['minlength']">First name should be 5 min length</b>
+<b></b>
+
+

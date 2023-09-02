@@ -1,0 +1,20 @@
+<p>Demo on displaying the infor of developers</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Bonus</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let emp of employees" (click)="func(emp)">
+            <td>{{emp.id}}</td>
+            <td>{{emp.name}}</td>
+            <td>{{emp.salary}}</td>
+            <td>{{emp.bonus}}</td>
+        </tr>
+    </tbody>
+</table>
